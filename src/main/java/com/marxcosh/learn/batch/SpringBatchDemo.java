@@ -1,12 +1,14 @@
-package com.marxcosh.learn.demo;
+package com.marxcosh.learn.batch;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import com.marxcosh.learn.batch.SpringBatchDemoTests;
+
 @SpringBootApplication
-public class DemoApplication {
+public class SpringBatchDemo {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(SpringBatchDemoTests.class, args);
 	}
 }
