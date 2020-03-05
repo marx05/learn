@@ -5,13 +5,15 @@ import java.util.Collections;
 import java.util.List;
 import java.util.logging.Logger;
 
+/**
+ * Finished in ~2hrs (Score : 66%, correctness(100%) + performance(33%))
+ */
 public class OddOccurences {
 
     private static final Logger LOGGER = Logger.getLogger(OddOccurences.class.getName());
 
     public static int findOddOccurences(int[] intA) {
 
-//        LOGGER.info("START : findOddOccurences");
         int noPair = 0;
         int frequency = 0;
         for (int arrayValue : intA) {
@@ -20,14 +22,13 @@ public class OddOccurences {
                     frequency++;
                 }
             }
-//            System.out.println("frequency of " +  arrayValue + " is " + frequency);
             if (frequency%2 != 0) {
                 noPair = arrayValue;
                 break;
             }
             frequency = 0;
         }
-//        LOGGER.info("END : findOddOccurences");
+
         return noPair;
 
     }

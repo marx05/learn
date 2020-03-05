@@ -1,10 +1,20 @@
 package main.webapp.exercises;
 
+/**
+ * Finished in ~40mins (Score : 100%, correctness only)
+ */
 public class CyclicRotation {
 
-    public static int[] doCyclicRotation (int[] intArr, int rotations) {
-        int[] rotatedArr = intArr;
+    public static int[] doCyclicRotation (int[] cycArr, int rotations) {
 
+        if (cycArr == null) {
+            return null;
+        }
+
+        int[] rotatedArr = new int[cycArr.length];
+        for (int i = 0; i < cycArr.length; i++) {
+            rotatedArr[(i + rotations) % cycArr.length] = cycArr[i];
+        }
 
         return rotatedArr;
     }

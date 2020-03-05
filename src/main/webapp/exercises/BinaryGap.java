@@ -2,6 +2,9 @@ package main.webapp.exercises;
 
 import java.util.logging.Logger;
 
+/**
+ * Finished in ~1++hrs (Score : 100%, correctness only)
+ */
 public class BinaryGap {
     private static final Logger LOGGER = Logger.getLogger(BinaryGap.class.getName());
 
