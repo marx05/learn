@@ -42,7 +42,7 @@ public class Practice {
 //        System.out.println("Frog needs to jump " + jumpCount + " times to travel from " + start + " to " + dest);
 
         //PermMissingElem
-        int[][] A = {{}, {1}, {1, 2}, {2, 3}, {2, 3, 4}, {1, 2, 4}, {1, 2, 3}};
+        int[][] A = {{}, {1}, {3, 2}, {1, 2}, {2, 3}, {2, 3, 4}, {1, 2, 4}, {1, 2, 3}};
         for (int i = 0; i < A.length; i++) {
             System.out.println("Missing Element : " + PermMissingElem.solution(A[i]));
         }

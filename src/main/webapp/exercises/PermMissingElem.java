@@ -3,12 +3,14 @@ package main.webapp.exercises;
 import java.util.Arrays;
 
 /**
- *
+ * Finished in ~2hrs (Score : 100%, correctness + performance)
+ * Took longer than expected due to misundestanding of requirements
  */
 public class PermMissingElem {
     public static int solution(int A[]) {
         //each element of array A is an integer within the range [1..(N + 1)].
         int missingElement = 1;
+        Arrays.sort(A);
 
         if (A.length == 0) {
             return missingElement;
@@ -21,7 +23,6 @@ public class PermMissingElem {
         } else if (A[A.length-1] == A.length) {
             return A[A.length-1] + 1;
         }
-        Arrays.sort(A);
         //System.out.println("length : " + A.length);
 
         for (int i = 0; i < A.length; i++) {
