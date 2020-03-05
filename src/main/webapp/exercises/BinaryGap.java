@@ -8,8 +8,8 @@ import java.util.logging.Logger;
 public class BinaryGap {
     private static final Logger LOGGER = Logger.getLogger(BinaryGap.class.getName());
 
-    public static void findMaxBinaryGap(int number) {
-//        LOGGER.info("START : findMaxBinaryGap");
+    public static void solution(int number) {
+//        LOGGER.info("START : solution");
 
         String binaryStr = Integer.toBinaryString(number);
         int openGap = binaryStr.indexOf("10");
@@ -35,6 +35,6 @@ public class BinaryGap {
             System.out.println("[" + number + "] having a binary equivalent value of [" + binaryStr + "] has no Binary Gap ");
         }
 
-//        LOGGER.info("END : findMaxBinaryGap");
+//        LOGGER.info("END : solution");
     }
 }

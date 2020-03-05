@@ -5,7 +5,7 @@ package main.webapp.exercises;
  */
 public class FrogJump {
 
-    public static int doFrogJump(int start, int destination, int jumpDist) {
+    public static int solution(int start, int destination, int jumpDist) {
 
         int jumpCount = 0;
         int distance = destination - start;

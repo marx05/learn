@@ -5,7 +5,7 @@ package main.webapp.exercises;
  */
 public class CyclicRotation {
 
-    public static int[] doCyclicRotation (int[] cycArr, int rotations) {
+    public static int[] solution(int[] cycArr, int rotations) {
 
         if (cycArr == null) {
             return null;

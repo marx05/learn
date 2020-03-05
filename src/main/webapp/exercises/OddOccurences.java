@@ -12,7 +12,7 @@ public class OddOccurences {
 
     private static final Logger LOGGER = Logger.getLogger(OddOccurences.class.getName());
 
-    public static int findOddOccurences(int[] intA) {
+    public static int solution(int[] intA) {
 
         int noPair = 0;
         int frequency = 0;
@@ -33,9 +33,9 @@ public class OddOccurences {
 
     }
 
-    public static int findOddOccurencesWithConversionToInteger(int[] intA) {
+    public static int solutionWithConversion(int[] intA) {
 
-//        LOGGER.info("START : findOddOccurencesWithConversionToInteger");
+//        LOGGER.info("START : solutionWithConversion");
         int noPair = 0;
 
         //primitive conversion to Integer naive
@@ -56,7 +56,7 @@ public class OddOccurences {
                 noPair = arrayValue;
             }
         }
-//        LOGGER.info("END : findOddOccurencesWithConversionToInteger");
+//        LOGGER.info("END : solutionWithConversion");
         return noPair;
     }
 }
