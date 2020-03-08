@@ -1,10 +1,9 @@
 package main.webapp;
 
-import main.webapp.exercises.*;
+import main.webapp.exercises.timecomplexity.PermMissingElem;
+import main.webapp.exercises.timecomplexity.TapeEquilibrium;
 
 import java.util.logging.Logger;
-
-import static main.webapp.exercises.FrogJump.solution;
 
 public class Practice {
 
@@ -42,10 +41,20 @@ public class Practice {
 //        System.out.println("Frog needs to jump " + jumpCount + " times to travel from " + start + " to " + dest);
 
         //PermMissingElem
-        int[][] A = {{}, {1}, {3, 2}, {1, 2}, {2, 3}, {2, 3, 4}, {1, 2, 4}, {1, 2, 3}};
+//        int[][] A = {{}, {1}, {3, 2}, {1, 2}, {2, 3}, {2, 3, 4}, {1, 2, 4}, {1, 2, 3}};
+//        for (int i = 0; i < A.length; i++) {
+//            System.out.println("Missing Element : " + PermMissingElem.solution(A[i]));
+//        }
+
+        //TapeEquilibrium
+        int[][] A = {{-1000, 1000}};//{3, 1, 2, 4, 3}, {-1000, 1000}, {-3, 2, 1, -7, 10},{-10, 2, 10, 20, 99, -99}
         for (int i = 0; i < A.length; i++) {
-            System.out.println("Missing Element : " + PermMissingElem.solution(A[i]));
+//            System.out.println("Min Diff Solution[A] : " + TapeEquilibrium.solutionA(A[i]));
+            System.out.println("Min Diff Solution[B] : " + TapeEquilibrium.solutionB(A[i]));
+//            System.out.println("Min Diff Solution[C] : " + TapeEquilibrium.solutionC(A[i]));
+            System.out.println("Min Diff Solution[D] : " + TapeEquilibrium.solutionD(A[i]));
         }
+
 
 
     }

@@ -1,4 +1,4 @@
-package main.webapp.exercises;
+package main.webapp.exercises.iterations;
 
 import java.util.logging.Logger;
 

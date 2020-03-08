@@ -1,4 +1,4 @@
-package main.webapp.exercises;
+package main.webapp.exercises.timecomplexity;
 
 import java.util.Arrays;
 
@@ -28,7 +28,6 @@ public class PermMissingElem {
         for (int i = 0; i < A.length; i++) {
             //System.out.println("i : " + i + " : " + A[i]);
             if (A[0] != 1) {
-                missingElement = 1;
                 break;
             } else if (A[i+1]-A[i] > 1) {
                 missingElement = A[i] + 1;

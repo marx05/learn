@@ -1,4 +1,4 @@
-package main.webapp.exercises;
+package main.webapp.exercises.arrays;
 
 /**
  * Finished in ~40mins (Score : 100%, correctness only)

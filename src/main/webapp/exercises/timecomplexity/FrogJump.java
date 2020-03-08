@@ -1,4 +1,4 @@
-package main.webapp.exercises;
+package main.webapp.exercises.timecomplexity;
 
 /**
  * Finished in 13mins (Score : 100%, correctness + performance)
@@ -7,7 +7,7 @@ public class FrogJump {
 
     public static int solution(int start, int destination, int jumpDist) {
 
-        int jumpCount = 0;
+        int jumpCount;
         int distance = destination - start;
 
         jumpCount = (distance/jumpDist);

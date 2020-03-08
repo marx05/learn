@@ -1,4 +1,4 @@
-package main.webapp.exercises;
+package main.webapp.exercises.arrays;
 
 import java.util.Arrays;
 import java.util.Collections;
