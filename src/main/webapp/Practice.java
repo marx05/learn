@@ -1,5 +1,6 @@
 package main.webapp;
 
+import main.webapp.exercises.countingelements.FrogRiverOne;
 import main.webapp.exercises.countingelements.MissingInteger;
 import main.webapp.exercises.timecomplexity.PermMissingElem;
 import main.webapp.exercises.timecomplexity.TapeEquilibrium;
@@ -60,27 +61,37 @@ public class Practice {
 //        }
 
         //MissingInteger
-        int[] largeArr = new int[100000];
+//        int[] largeArr = new int[100000];
+//
+//        for (int i = 0; i < largeArr.length; i++) {
+//            largeArr[i] = i;
+//        }
+//
+//        int[][] missingIntegerA = {{-1000, 1000}
+//                , {3, 7, 2, 4, 6}
+//                , {-3, -7}
+//                , {1, 2, 3}
+//                , {1, 3, 6, 4, 1, 2}
+//                , {1, 1000000}
+//                , largeArr
+//                , {-1000000, 1, 1000000}};//
+//        for (int i = 0; i < missingIntegerA.length; i++) {
+//            System.out.print("Array Values : ");
+//            for (int arrayElement : missingIntegerA[i]) {
+//                System.out.print(arrayElement + " ");
+//            }
+//            System.out.println("\nMissing Integer : " + MissingInteger.solution(missingIntegerA[i]));
+//        }
 
-        for (int i = 0; i < largeArr.length; i++) {
-            largeArr[i] = i;
+        //FrogRiverOne
+        int[] leavesArr = new int[100000];
+        for (int i = 0; i < leavesArr.length; i++) {
+            leavesArr[i] = i;
         }
-
-        int[][] missingIntegerA = {{-1000, 1000}
-                , {3, 7, 2, 4, 6}
-                , {-3, -7}
-                , {1, 2, 3}
-                , {1, 3, 6, 4, 1, 2}
-                , {1, 1000000}
-                , largeArr
-                , {-1000000, 1, 1000000}};//
-        for (int i = 0; i < missingIntegerA.length; i++) {
-            System.out.print("Array Values : ");
-            for (int arrayElement : missingIntegerA[i]) {
-                System.out.print(arrayElement + " ");
-            }
-            System.out.println("\nMissing Integer : " + MissingInteger.solution(missingIntegerA[i]));
-        }
+        int destination = 99999;
+//        int[] leavesArr = {1, 3, 1, 4, 2, 3, 5, 4};
+//        int destination = 5;
+        System.out.println("\nFrogRiverOne : " + FrogRiverOne.solution(destination, leavesArr));
     }
 
 }
