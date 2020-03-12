@@ -84,13 +84,13 @@ public class Practice {
 //        }
 
         //FrogRiverOne
-        int[] leavesArr = new int[100000];
-        for (int i = 0; i < leavesArr.length; i++) {
-            leavesArr[i] = i;
-        }
-        int destination = 99999;
-//        int[] leavesArr = {1, 3, 1, 4, 2, 3, 5, 4};
-//        int destination = 5;
+//        int[] leavesArr = new int[10000];
+//        for (int i = 0; i < leavesArr.length; i++) {
+//            leavesArr[i] = i;
+//        }
+//        int destination = 9999;
+        int[] leavesArr = {3, 2, 1, 4, 5, 3, 1, 4, 5};
+        int destination = 5;
         System.out.println("\nFrogRiverOne : " + FrogRiverOne.solution(destination, leavesArr));
     }
 
